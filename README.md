@@ -1,2 +1,3 @@
 # google-homepage
-https://github.com/JakporGarry/google-homepage
+https://jakporgarry.github.io/google-homepage/
+
