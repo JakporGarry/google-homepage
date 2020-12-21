@@ -1,0 +1,174 @@
+body{
+    font: 1rem/1.5 Arial, Helvetica, sans-serif;
+    background-color:white;
+    padding: 0;
+    margin: 0;
+    height: 100vh;   
+}
+.container{
+    width:100%;
+    margin:0px;
+    overflow:hidden;
+    text-align: center;
+}
+/*HEADER*/
+header{
+    min-height:1rem;
+    margin-top: 0.5rem;
+}
+header a{
+    text-decoration:none;
+    color:black;
+    font-size: 0.9rem;
+}
+header a:hover{
+    color:blue;
+    font-weight: bold;
+}
+header li{
+    display: inline;
+    padding: 0  0.5rem;
+}
+header nav{
+    float:right;
+    margin-right:1rem ;
+}
+header nav i{
+    font-size:1.2rem;
+}
+
+/*SECTION GRID*/
+.grid{
+    height: 100%;
+    width: 100%;
+    margin: auto;  
+    display: grid;
+}
+
+.animated-gif{
+    width: 20rem;
+    margin-top: 4rem;
+}
+
+.search input{
+    border: none;
+    border-radius: 50rem;
+    height: 3rem;
+    padding-left: 1rem;
+    width:50%;
+    background:whitesmoke ;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.search ::placeholder{
+    padding-left: 3rem;
+  }
+
+.search a{   
+    position: relative; 
+    right: 2rem;
+    z-index: 2;  
+}
+
+/*ICONS*/
+.icons-links{
+    display: grid;
+    grid-gap:1rem ;
+    grid-template-columns:repeat(5, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.icons-links > div{
+    font-size: 0.8rem;
+}
+.icons-links > div:hover{
+    background: rgb(199, 193, 193);
+    border-radius:0.5rem;
+}
+.icons-links i{
+    font-size: 1.5rem; 
+    background: rgb(241, 240, 240);
+    padding: 0.8rem;
+    border-radius:50%;
+    margin-top: 1rem;
+}
+
+.icons-links a{
+    text-decoration: none;
+}
+
+.button{
+    border:none;
+    border-radius: 2rem;
+    height: fit-content;
+    font-size: 0.8rem;
+    background:white;
+    box-shadow:0 0 10px gray;
+    padding:0.4rem 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+.button i{
+    padding-right: 0.6rem;
+}
+footer a:hover{
+    background: rgb(230, 230, 236);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width:600px) and (max-width:1025px){
+    .icons-links > div{
+        font-size: 0.5rem;
+    }
+    .icons-links i{
+        font-size: 1.5rem; 
+    }
+    .icons-links{
+        margin-top: 5vh;
+    }
+    .search ::placeholder{
+        padding-left: 0rem;
+    }
+}
+@media screen and (min-width:150px) and (max-width:600px) {
+    .search input{
+        width:70%;
+    } 
+    .icons-links{
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-rows: repeat(2, 1fr);
+        width: 60%;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 3rem;
+    }
+    .icons-links > div{
+        font-size: 0.5rem;
+    }
+    .icons-links i{
+        font-size: 1.5rem; 
+    }
+    .search ::placeholder{
+        padding-left: 0rem;
+    }    
+    .button{
+        border-radius: 50%;
+        padding: 0.5rem;
+    }
+    .button span{
+        display: none;
+    }
+    .button i{
+        padding:0.4rem;
+    }
+}
+
+
+
